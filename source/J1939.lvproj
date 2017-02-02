@@ -20,11 +20,127 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="Build Specifications" Type="Build"/>
+	</Item>
+	<Item Name="NI-PXI8840QuadCore-2F23D57D" Type="RT PXI Chassis">
+		<Property Name="alias.name" Type="Str">NI-PXI8840QuadCore-2F23D57D</Property>
+		<Property Name="alias.value" Type="Str">10.1.128.210</Property>
+		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,PharLap;CPU,x86;</Property>
+		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
+		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
+		<Property Name="host.ResponsivenessCheckPingTimeout" Type="UInt">1000</Property>
+		<Property Name="host.TargetCPUID" Type="UInt">3</Property>
+		<Property Name="host.TargetOSID" Type="UInt">15</Property>
+		<Property Name="target.cleanupVisa" Type="Bool">false</Property>
+		<Property Name="target.FPProtocolGlobals_ControlTimeLimit" Type="Int">300</Property>
+		<Property Name="target.getDefault-&gt;WebServer.Port" Type="Int">80</Property>
+		<Property Name="target.getDefault-&gt;WebServer.Timeout" Type="Int">60</Property>
+		<Property Name="target.IOScan.Faults" Type="Str"></Property>
+		<Property Name="target.IOScan.NetVarPeriod" Type="UInt">100</Property>
+		<Property Name="target.IOScan.NetWatchdogEnabled" Type="Bool">false</Property>
+		<Property Name="target.IOScan.Period" Type="UInt">10000</Property>
+		<Property Name="target.IOScan.PowerupMode" Type="UInt">0</Property>
+		<Property Name="target.IOScan.Priority" Type="UInt">0</Property>
+		<Property Name="target.IOScan.ReportModeConflict" Type="Bool">true</Property>
+		<Property Name="target.IsRemotePanelSupported" Type="Bool">true</Property>
+		<Property Name="target.RTCPULoadMonitoringEnabled" Type="Bool">true</Property>
+		<Property Name="target.RTDebugWebServerHTTPPort" Type="Int">8001</Property>
+		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
+		<Property Name="target.RTTarget.EnableFileSharing" Type="Bool">true</Property>
+		<Property Name="target.RTTarget.IPAccess" Type="Str">+*</Property>
+		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">false</Property>
+		<Property Name="target.RTTarget.VIPath" Type="Path">/c/ni-rt/startup</Property>
+		<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
+		<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
+		<Property Name="target.server.tcp.access" Type="Str">+*</Property>
+		<Property Name="target.server.tcp.enabled" Type="Bool">false</Property>
+		<Property Name="target.server.tcp.paranoid" Type="Bool">true</Property>
+		<Property Name="target.server.tcp.port" Type="Int">3363</Property>
+		<Property Name="target.server.tcp.serviceName" Type="Str">Main Application Instance/VI Server</Property>
+		<Property Name="target.server.tcp.serviceName.default" Type="Str">Main Application Instance/VI Server</Property>
+		<Property Name="target.server.vi.access" Type="Str">+*</Property>
+		<Property Name="target.server.vi.callsEnabled" Type="Bool">true</Property>
+		<Property Name="target.server.vi.propertiesEnabled" Type="Bool">true</Property>
+		<Property Name="target.WebServer.Config" Type="Str">Listen 8000
+
+NI.ServerName default
+DocumentRoot "$LVSERVER_DOCROOT"
+TypesConfig "$LVSERVER_CONFIGROOT/mime.types"
+DirectoryIndex index.htm
+WorkerLimit 10
+InactivityTimeout 60
+
+LoadModulePath "$LVSERVER_MODULEPATHS"
+LoadModule LVAuth lvauthmodule
+LoadModule LVRFP lvrfpmodule
+
+#
+# Pipeline Definition
+#
+
+SetConnector netConnector
+
+AddHandler LVAuth
+AddHandler LVRFP
+
+AddHandler fileHandler ""
+
+AddOutputFilter chunkFilter
+
+
+</Property>
+		<Property Name="target.WebServer.Enabled" Type="Bool">false</Property>
+		<Property Name="target.WebServer.LogEnabled" Type="Bool">false</Property>
+		<Property Name="target.WebServer.LogPath" Type="Path">/c/ni-rt/system/www/www.log</Property>
+		<Property Name="target.WebServer.Port" Type="Int">80</Property>
+		<Property Name="target.WebServer.RootPath" Type="Path">/c/ni-rt/system/www</Property>
+		<Property Name="target.WebServer.TcpAccess" Type="Str">c+*</Property>
+		<Property Name="target.WebServer.Timeout" Type="Int">60</Property>
+		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
+		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
+		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
+		<Item Name="CAN Loopback Test.vi" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/nixnet/examples.llb/CAN Loopback Test.vi"/>
+		<Item Name="Deploy DB.vi" Type="VI" URL="../testing/Deploy DB.vi"/>
 		<Item Name="J1939 configuration.lvclass" Type="LVClass" URL="../module/configuration/J1939 configuration.lvclass"/>
 		<Item Name="J1939 editor node.lvclass" Type="LVClass" URL="../editor node/J1939 editor node.lvclass"/>
+		<Item Name="J1939 Frame Input Queued.vi" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/nixnet/examples.llb/J1939 Frame Input Queued.vi"/>
+		<Item Name="J1939 Frame Input Stream.vi" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/nixnet/examples.llb/J1939 Frame Input Stream.vi"/>
+		<Item Name="J1939 Frame Output Queued.vi" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/nixnet/examples.llb/J1939 Frame Output Queued.vi"/>
+		<Item Name="J1939 Frame Output Stream.vi" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/nixnet/examples.llb/J1939 Frame Output Stream.vi"/>
 		<Item Name="J1939 runtime.lvclass" Type="LVClass" URL="../module/execution/J1939 runtime.lvclass"/>
+		<Item Name="J1939 Signal Input Single Point.vi" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/nixnet/examples.llb/J1939 Signal Input Single Point.vi"/>
+		<Item Name="J1939 Signal Output Single Point.vi" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/nixnet/examples.llb/J1939 Signal Output Single Point.vi"/>
 		<Item Name="J1939 tests.lvlib" Type="Library" URL="../testing/J1939 tests.lvlib"/>
 		<Item Name="J1939.lvlib" Type="Library" URL="../J1939 Library/J1939.lvlib"/>
+		<Item Name="J1939LoopBackTest.vi" Type="VI" URL="../testing/J1939LoopBackTest.vi"/>
+		<Item Name="New NI-XNET Session" Type="NI-XNET Session">
+			<Property Name="session.alias" Type="Str">j1939</Property>
+			<Property Name="session.cluster" Type="Str">Cluster</Property>
+			<Property Name="session.coldstart_disabled" Type="UInt">2</Property>
+			<Property Name="session.coldstart_value" Type="UInt">0</Property>
+			<Property Name="session.coldstart_visible" Type="UInt">0</Property>
+			<Property Name="session.comment" Type="Str"></Property>
+			<Property Name="session.create" Type="UInt">0</Property>
+			<Property Name="session.defaultschedule_disabled" Type="UInt">2</Property>
+			<Property Name="session.defaultschedule_value" Type="Str"></Property>
+			<Property Name="session.defaultschedule_visible" Type="UInt">0</Property>
+			<Property Name="session.displaypdus" Type="UInt">0</Property>
+			<Property Name="session.interface" Type="Str">CAN1</Property>
+			<Property Name="session.keyslot" Type="UInt">0</Property>
+			<Property Name="session.list" Type="Str">A1.EngBlowerBypassValvePos,AAC1.Aftertreatment1AirSystemRelay,XFER.PGNofRequstedInformation</Property>
+			<Property Name="session.master_disabled" Type="UInt">2</Property>
+			<Property Name="session.master_value" Type="UInt">0</Property>
+			<Property Name="session.master_visible" Type="UInt">0</Property>
+			<Property Name="session.mode" Type="UInt">0</Property>
+			<Property Name="session.name" Type="Str">New NI-XNET Session</Property>
+			<Property Name="session.resample_fraction" Type="UInt">0</Property>
+			<Property Name="session.resample_integer" Type="UInt">1000</Property>
+			<Property Name="session.startupframe_disabled" Type="UInt">2</Property>
+			<Property Name="session.startupframe_value" Type="Str"></Property>
+			<Property Name="session.startupframe_visible" Type="UInt">0</Property>
+		</Item>
+		<Item Name="Prototype.vi" Type="VI" URL="../testing/Prototype.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="_XNET Close All.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/_XNET Close All.vi"/>
@@ -42,7 +158,6 @@
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="control module configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Tag Editor Core/control module/configuration/control module configuration.lvclass"/>
 				<Item Name="control module editor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Tag Editor Core/control module/editor node/control module editor.lvclass"/>
-				<Item Name="control module runtime.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/DCAF/Tag Editor Core/control module/runtime/control module runtime.lvclass"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Create Mask By Alpha.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Create Mask By Alpha.vi"/>
 				<Item Name="DCAF UI Elements.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/DCAF UI Toolkit/Controls/DCAF UI Elements.lvlib"/>
@@ -141,6 +256,7 @@
 				<Item Name="XNET CAN Comm.ctl" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET CAN Comm.ctl"/>
 				<Item Name="XNET CAN Last Err.ctl" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET CAN Last Err.ctl"/>
 				<Item Name="XNET Clear.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Clear.vi"/>
+				<Item Name="XNET Control Scope.ctl" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Control Scope.ctl"/>
 				<Item Name="XNET Convert (Frame CAN to Signal).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Convert (Frame CAN to Signal).vi"/>
 				<Item Name="XNET Convert (Frame FlexRay to Signal).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Convert (Frame FlexRay to Signal).vi"/>
 				<Item Name="XNET Convert (Frame LIN to Signal).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Convert (Frame LIN to Signal).vi"/>
@@ -191,6 +307,16 @@
 				<Item Name="XNET Database Create (Signal).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Database Create (Signal).vi"/>
 				<Item Name="XNET Database Create (Subframe).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Database Create (Subframe).vi"/>
 				<Item Name="XNET Database Create Object.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Database Create Object.vi"/>
+				<Item Name="XNET Database Open (Cluster).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Database Open (Cluster).vi"/>
+				<Item Name="XNET Database Open (Database).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Database Open (Database).vi"/>
+				<Item Name="XNET Database Open (ECU).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Database Open (ECU).vi"/>
+				<Item Name="XNET Database Open (Frame).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Database Open (Frame).vi"/>
+				<Item Name="XNET Database Open (LIN Schedule Entry).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Database Open (LIN Schedule Entry).vi"/>
+				<Item Name="XNET Database Open (LIN Schedule).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Database Open (LIN Schedule).vi"/>
+				<Item Name="XNET Database Open (PDU).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Database Open (PDU).vi"/>
+				<Item Name="XNET Database Open (Signal).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Database Open (Signal).vi"/>
+				<Item Name="XNET Database Open (Subframe).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Database Open (Subframe).vi"/>
+				<Item Name="XNET Database Open.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Database Open.vi"/>
 				<Item Name="XNET Fill In Error Info.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Fill In Error Info.vi"/>
 				<Item Name="XNET FlexRay Comm.ctl" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET FlexRay Comm.ctl"/>
 				<Item Name="XNET FlexRay POC State.ctl" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET FlexRay POC State.ctl"/>
@@ -226,6 +352,8 @@
 				<Item Name="XNET Read (State Time Start).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Read (State Time Start).vi"/>
 				<Item Name="XNET Read.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Read.vi"/>
 				<Item Name="XNET Session Info State.ctl" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Session Info State.ctl"/>
+				<Item Name="XNET Start.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Start.vi"/>
+				<Item Name="XNET Stop.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Stop.vi"/>
 				<Item Name="XNET String To IO Name (Cluster).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET String To IO Name (Cluster).vi"/>
 				<Item Name="XNET String To IO Name (Database Alias).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET String To IO Name (Database Alias).vi"/>
 				<Item Name="XNET String To IO Name (ECU).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET String To IO Name (ECU).vi"/>
@@ -237,6 +365,7 @@
 				<Item Name="XNET String To IO Name (Session).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET String To IO Name (Session).vi"/>
 				<Item Name="XNET String To IO Name (Signal).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET String To IO Name (Signal).vi"/>
 				<Item Name="XNET String To IO Name (Subframe).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET String To IO Name (Subframe).vi"/>
+				<Item Name="XNET System Close.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET System Close.vi"/>
 				<Item Name="XNET Write (Frame CAN).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Write (Frame CAN).vi"/>
 				<Item Name="XNET Write (Frame FlexRay).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Write (Frame FlexRay).vi"/>
 				<Item Name="XNET Write (Frame LIN).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Write (Frame LIN).vi"/>
@@ -249,7 +378,11 @@
 				<Item Name="XNET Write (State LIN Schedule Change).vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Write (State LIN Schedule Change).vi"/>
 				<Item Name="XNET Write.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Write.vi"/>
 			</Item>
-			<Item Name="load device database into cluster.vi" Type="VI" URL="../../../../Users/Benjamin/Desktop/Tag bus J1939/load device database into cluster.vi"/>
+			<Item Name="NI-XNET Example subVI - CAN Frame to Table.vi" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/nixnet/examples.llb/NI-XNET Example subVI - CAN Frame to Table.vi"/>
+			<Item Name="NI-XNET Example subVI - Initialize Signal Array.vi" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/nixnet/examples.llb/NI-XNET Example subVI - Initialize Signal Array.vi"/>
+			<Item Name="NI-XNET Example subVI - J1939 Claim Polymorphic.vi" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/nixnet/examples.llb/NI-XNET Example subVI - J1939 Claim Polymorphic.vi"/>
+			<Item Name="NI-XNET Example subVI - J1939 Claim With Address.vi" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/nixnet/examples.llb/NI-XNET Example subVI - J1939 Claim With Address.vi"/>
+			<Item Name="NI-XNET Example subVI - J1939 Claim With ECU.vi" Type="VI" URL="../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/nixnet/examples.llb/NI-XNET Example subVI - J1939 Claim With ECU.vi"/>
 			<Item Name="nixlvapi.dll" Type="Document" URL="nixlvapi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
