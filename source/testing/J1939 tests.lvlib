@@ -9,11 +9,18 @@
 </Property>
 	<Item Name="Add Remove Test.vi" Type="VI" URL="../Add Remove Test.vi"/>
 	<Item Name="Create Test Configuration.vi" Type="VI" URL="../Create Test Configuration.vi"/>
-	<Item Name="example test.vi" Type="VI" URL="../example test.vi"/>
+	<Item Name="get channels test.lvtest" Type="TestItem" URL="../get channels test.lvtest">
+		<Property Name="utf.test.bind" Type="Str">J1939 tests.lvlib:get channels test.vi</Property>
+		<Property Name="utf.vector.test.bind" Type="Str">036761B8-3013-A453-9574-F736CA008478</Property>
+	</Item>
 	<Item Name="get channels test.vi" Type="VI" URL="../get channels test.vi"/>
 	<Item Name="init runtime test.vi" Type="VI" URL="../init runtime test.vi"/>
 	<Item Name="modify channel test.vi" Type="VI" URL="../modify channel test.vi"/>
 	<Item Name="Runtime Test.vi" Type="VI" URL="../Runtime Test.vi"/>
+	<Item Name="serialization tests.lvtest" Type="TestItem" URL="../serialization tests.lvtest">
+		<Property Name="utf.test.bind" Type="Str">J1939 tests.lvlib:serialization tests.vi</Property>
+		<Property Name="utf.vector.test.bind" Type="Str">9CC18F0E-51A8-309D-8180-CAEDEE2A8F3E</Property>
+	</Item>
 	<Item Name="serialization tests.vi" Type="VI" URL="../serialization tests.vi"/>
 	<Item Name="ToTable Test.vi" Type="VI" URL="../ToTable Test.vi"/>
 </Library>
