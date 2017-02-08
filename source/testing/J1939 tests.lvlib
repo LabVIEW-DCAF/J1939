@@ -8,10 +8,11 @@
 
 </Property>
 	<Item Name="Add Remove Test.vi" Type="VI" URL="../Add Remove Test.vi"/>
+	<Item Name="ConfigLoadTest.vi" Type="VI" URL="../ConfigLoadTest.vi"/>
 	<Item Name="Create Test Configuration.vi" Type="VI" URL="../Create Test Configuration.vi"/>
 	<Item Name="get channels test.lvtest" Type="TestItem" URL="../get channels test.lvtest">
 		<Property Name="utf.test.bind" Type="Str">J1939 tests.lvlib:get channels test.vi</Property>
-		<Property Name="utf.vector.test.bind" Type="Str">036761B8-3013-A453-9574-F736CA008478</Property>
+		<Property Name="utf.vector.test.bind" Type="Str">DB0EFEC3-9C0A-E88C-A0B5-42B0D3C6E121</Property>
 	</Item>
 	<Item Name="get channels test.vi" Type="VI" URL="../get channels test.vi"/>
 	<Item Name="init runtime test.vi" Type="VI" URL="../init runtime test.vi"/>
@@ -19,7 +20,7 @@
 	<Item Name="Runtime Test.vi" Type="VI" URL="../Runtime Test.vi"/>
 	<Item Name="serialization tests.lvtest" Type="TestItem" URL="../serialization tests.lvtest">
 		<Property Name="utf.test.bind" Type="Str">J1939 tests.lvlib:serialization tests.vi</Property>
-		<Property Name="utf.vector.test.bind" Type="Str">9CC18F0E-51A8-309D-8180-CAEDEE2A8F3E</Property>
+		<Property Name="utf.vector.test.bind" Type="Str">4D0EFA13-9350-7880-B562-58BECEBCDD31</Property>
 	</Item>
 	<Item Name="serialization tests.vi" Type="VI" URL="../serialization tests.vi"/>
 	<Item Name="ToTable Test.vi" Type="VI" URL="../ToTable Test.vi"/>
