@@ -32,7 +32,6 @@
 			<Item Name="Internal Data.ctl" Type="VI" URL="../Internals/API Types/Internal Data.ctl"/>
 			<Item Name="PGN Fields Cluster.ctl" Type="VI" URL="../Internals/API Types/PGN Fields Cluster.ctl"/>
 			<Item Name="Scaling Initialization.ctl" Type="VI" URL="../Internals/API Types/Scaling Initialization.ctl"/>
-			<Item Name="Signal Mapping.ctl" Type="VI" URL="../../module/configuration/Signal Mapping.ctl"/>
 			<Item Name="Tag Bus Queues.ctl" Type="VI" URL="../Internals/API Types/Tag Bus Queues.ctl"/>
 			<Item Name="XNET Settings.ctl" Type="VI" URL="../Internals/API Types/XNET Settings.ctl"/>
 			<Item Name="Message Types.ctl" Type="VI" URL="../Internals/API Types/Message Types.ctl"/>
