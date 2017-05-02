@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-11-21 15:11:17" Modified_Date="2017-04-27 10:24:52" Creator="Daniel" Comments="" ID="95a15d81dea834086ac6f5a223c71c48">
-=======
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-11-21 15:11:17" Modified_Date="2017-04-26 15:13:35" Creator="Daniel" Comments="" ID="a817559961fab85106d07eb56f4299ad">
->>>>>>> origin/master
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-11-21 15:11:17" Modified_Date="2017-05-02 17:18:03" Creator="Daniel" Comments="" ID="5f56f6d1c36f0eac0007f9409e3e2d60">
   <Library_General_Settings>
     <Package_File_Name>ni_lib_dcaf_J1939</Package_File_Name>
-    <Library_Version>1.1.0.4</Library_Version>
+    <Library_Version>1.1.0.6</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\..\releases\J1939</Library_Output_Folder>
@@ -39,11 +35,7 @@ It requires NI XNET hardware to work.</Description>
       <Copyright/>
       <Packager>NI Systems Engineering</Packager>
       <URL/>
-<<<<<<< HEAD
-      <Release_Notes>Updated to LabVIEW 2014</Release_Notes>
-=======
       <Release_Notes>Updated to LabVIEW 2014 or later.</Release_Notes>
->>>>>>> origin/master
     </Description>
     <Destinations>
       <Toolkit_VIs>
