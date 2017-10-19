@@ -22,27 +22,27 @@
 	</Item>
 	<Item Name="Add Remove Test.lvtest" Type="TestItem" URL="../Add Remove Test.lvtest">
 		<Property Name="utf.test.bind" Type="Str">J1939 tests.lvlib:Add Remove Test.vi</Property>
-		<Property Name="utf.vector.test.bind" Type="Str">E2824E68-DC63-F558-5FF9-D6C741C5F36F</Property>
+		<Property Name="utf.vector.test.bind" Type="Str">16A2D6DF-A9B6-04EC-3F45-515AC97C5FE8</Property>
 	</Item>
 	<Item Name="Add Remove Test.vi" Type="VI" URL="../Add Remove Test.vi"/>
 	<Item Name="get channels test.lvtest" Type="TestItem" URL="../get channels test.lvtest">
 		<Property Name="utf.test.bind" Type="Str">J1939 tests.lvlib:get channels test.vi</Property>
-		<Property Name="utf.vector.test.bind" Type="Str">DCB601DF-B36B-F9D6-C2A9-8481A4B2655B</Property>
+		<Property Name="utf.vector.test.bind" Type="Str">BB567595-E868-55EB-6C8A-3A50926C8BC9</Property>
 	</Item>
 	<Item Name="get channels test.vi" Type="VI" URL="../get channels test.vi"/>
 	<Item Name="init runtime test.lvtest" Type="TestItem" URL="../init runtime test.lvtest">
 		<Property Name="utf.test.bind" Type="Str">J1939 tests.lvlib:init runtime test.vi</Property>
-		<Property Name="utf.vector.test.bind" Type="Str">85DA69A8-CA25-EBAA-0065-961C71C147B7</Property>
+		<Property Name="utf.vector.test.bind" Type="Str">C50CAAC2-CC6C-AD1D-D3DB-1C359E174D7C</Property>
 	</Item>
 	<Item Name="init runtime test.vi" Type="VI" URL="../init runtime test.vi"/>
 	<Item Name="modify channel test.lvtest" Type="TestItem" URL="../modify channel test.lvtest">
 		<Property Name="utf.test.bind" Type="Str">J1939 tests.lvlib:modify channel test.vi</Property>
-		<Property Name="utf.vector.test.bind" Type="Str">D9ACBCD4-08B0-A1D3-E8D4-A45095AC769D</Property>
+		<Property Name="utf.vector.test.bind" Type="Str">A19FF3D3-2E1E-4A2D-1A44-A4633197E623</Property>
 	</Item>
 	<Item Name="modify channel test.vi" Type="VI" URL="../modify channel test.vi"/>
 	<Item Name="serialization tests.lvtest" Type="TestItem" URL="../serialization tests.lvtest">
 		<Property Name="utf.test.bind" Type="Str">J1939 tests.lvlib:serialization tests.vi</Property>
-		<Property Name="utf.vector.test.bind" Type="Str">D8E83CA4-6D1D-F8E5-7E2B-2660E149C174</Property>
+		<Property Name="utf.vector.test.bind" Type="Str">6CC2F81A-7A27-137E-2DB4-D6BEFEDCC336</Property>
 	</Item>
 	<Item Name="serialization tests.vi" Type="VI" URL="../serialization tests.vi"/>
 </Library>
