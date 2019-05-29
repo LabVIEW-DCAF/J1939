@@ -5,7 +5,7 @@
 
 def utfPaths = ["source\\J1939.lvproj"]
 def vipbPaths = ["source\\DCAF J1939.vipb"]
-def lvVersion = "14.0"
+def lvVersion = "15.0"
 
 //Leave the below line alone.  It pulls in the pipeline definition from the DCAF buildsystem repo so we don't duplicate code in every repo 
 dcafPipeline(utfPaths,vipbPaths,lvVersion)
