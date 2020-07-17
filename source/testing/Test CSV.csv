@@ -1,0 +1,4 @@
+J1939_CyclicSignal1,NIXNET_example.J1939_Over_CAN,I32,input data,J1939_CyclicSignal1
+J1939_CyclicSignal2,NIXNET_example.J1939_Over_CAN,I32,input data,
+J1939_EventSignal1,NIXNET_example.J1939_Over_CAN,I32,output data,J1939_EventSignal1
+J1939_LargeSignal3,NIXNET_example.J1939_Over_CAN,U32,output data,
