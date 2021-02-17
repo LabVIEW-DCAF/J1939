@@ -3,13 +3,17 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
+variables:
+  VIPMVersion : 1.1.0
+  VIPMBuild:  $[counter(variables['VIPMVersion'],0)]
+
 trigger:
 - master
 
 pool: 'DCAF Agents'
 
 steps:
-- script: echo Hello, world!
+- script: echo Hello, world! $(VIPMVersion).$(VIPMBuild)
   displayName: 'Run a one-line script'
 
 - script: |
