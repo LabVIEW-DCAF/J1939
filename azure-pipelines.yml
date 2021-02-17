@@ -6,8 +6,7 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'DCAF Agents'
+pool: 'DCAF Agents'
 
 steps:
 - script: echo Hello, world!
