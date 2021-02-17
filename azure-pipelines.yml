@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'DCAF Agents'
 
 steps:
 - script: echo Hello, world!
